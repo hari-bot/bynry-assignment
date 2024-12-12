@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useProfiles } from "../context/ProfileContext";
 
-function AdminPanel() {
+function AdminPanelPage() {
   const { profiles, addProfile, deleteProfile } = useProfiles();
   const [newProfile, setNewProfile] = useState({
     name: "",
@@ -169,4 +169,4 @@ function AdminPanel() {
   );
 }
 
-export default AdminPanel;
+export default AdminPanelPage;

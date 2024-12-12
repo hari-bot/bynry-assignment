@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import Map from "./Map";
+import Map from "../components/Map";
 import { useProfiles } from "../context/ProfileContext";
 
-function ProfileDetails() {
+function ProfileDetailsPage() {
   const { profiles } = useProfiles();
   const { id } = useParams();
   const profile = profiles.find((p) => p.id === parseInt(id));
@@ -84,4 +84,4 @@ function ProfileDetails() {
   );
 }
 
-export default ProfileDetails;
+export default ProfileDetailsPage;

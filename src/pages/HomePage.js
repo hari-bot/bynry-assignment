@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ProfileCard from "./ProfileCard";
-import Map from "./Map";
-import SearchFilter from "./SearchFilter";
+import ProfileCard from "../components/ProfileCard";
+import Map from "../components/Map";
+import SearchFilter from "../components/SearchFilter";
 import { useProfiles } from "../context/ProfileContext";
 
-function ProfileList() {
+function HomePage() {
   const { profiles } = useProfiles();
   const [filteredProfiles, setFilteredProfiles] = useState(profiles);
   const [selectedProfile, setSelectedProfile] = useState(null);
@@ -58,4 +58,4 @@ function ProfileList() {
   );
 }
 
-export default ProfileList;
+export default HomePage;
